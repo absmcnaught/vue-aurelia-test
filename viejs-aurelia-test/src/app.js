@@ -4,7 +4,6 @@ import About from "./components/About.vue";
 import Vue from "vue";
 
 export class App {
-  // message = 'Hello World!';
 
   attached() {
     new Vue({

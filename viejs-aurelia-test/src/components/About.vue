@@ -3,11 +3,11 @@
     <hr>
     <h1>{{ title }}</h1>
 		<span>{{ text }}</span>
+
 	</div>
 </template>
 
 <script>
-import TextReader from "./TextReader.vue";
 
 export default {
   name: "about",
@@ -19,6 +19,9 @@ export default {
 </script>
 
 <style>
+hr {
+  border: coral 2px solid;
+}
 #about {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;

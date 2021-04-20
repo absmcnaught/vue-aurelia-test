@@ -5,7 +5,8 @@
     <br>
 		<text-reader @load="text = $event"></text-reader>
 
-    <footer>{{ reference }}</footer>
+    <br>
+    <a v-bind:href="reference" target="_blank">{{ reference }}</a>
 	</div>
 </template>
 
@@ -25,6 +26,13 @@ export default {
 </script>
 
 <style>
+a {
+  color: lightblue;
+  font-weight: 700;
+}
+a:active {
+    color: lightblue;
+}
 #app {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
